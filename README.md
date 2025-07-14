@@ -1,7 +1,8 @@
 ```markdown
 ### Error-Centric Learning for Reasoning Improvement in GUI Agent (AAAI 2026)
-![Logo](./IFF-Framework.png)
-
+<div align="center">
+  <img width="90%" src="IFF-Framework.png">
+</div>
 
 # IFF-GUI-3B 
 *IFF-GUI-3B is a GUI–tailored vision-language models for robust GUI automation*
