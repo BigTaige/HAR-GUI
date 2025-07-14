@@ -1,10 +1,11 @@
-```markdown
-## Error-Centric Learning for Reasoning Improvement in GUI Agent (AAAI 2026)
+---
+# Error-Centric Learning for Reasoning Improvement in GUI Agent (AAAI 2026)
 <div align="center">
   <img width="90%" src="IFF-Framework.png">
 </div>
 
 ## Introduction
+
 **IFF-GUI-3B** is a GUI-tailored foundational model built upon **Qwen2.5-VL-3B-Instruct**. It was developed through a multi-stage training process, incorporating a series of advanced training strategies and a specialized data synthesis pipeline, as detailed in our paper.
 
 The model demonstrates stable short-term memory, exceptional screen comprehension, and robust generalization capabilities. It has achieved state-of-the-art (SOTA) performance on our proprietary Chinese Out-of-Distribution (OOD) GUI automation benchmark.
@@ -16,19 +17,6 @@ The model demonstrates stable short-term memory, exceptional screen comprehensio
 *   **SOTA Performance:** Leads the charts on our Chinese OOD GUI automation benchmark.
 
 ## Quick Start
-## Folder Structure at a Glance
-```
-.
-├── fold/               # 3 usage demos (vLLM, Swift, WebUI)
-├── fold_vllm/          # vLLM launcher & configs
-├── fold_template/      # all prompt templates
-├── scripts/
-│   ├── guideline.sh    # Guideline synthesis
-│   ├── CoT.sh          # System-2 Chain-of-Thought synthesis
-│   └── Act2Sum.sh      # Action-to-Summary synthesis
-└── training.sh         # Finetuning entry
-```
----
 
 ### 1. Download Model Weights
 
@@ -163,10 +151,6 @@ def get_model_response(img_url: str, goal: str, action: str):
 
 All instruction templates used in our paper and experiments can be found in the `/instruction_templates` directory. These are crucial for replicating our results and for prompting the model effectively.
 
-
 ## Citation
-If you use IFF-GUI-3B or its derivatives in your research, please cite our paper (coming soon) 🙏
----
 
-Happy hacking! Feel free to open issues or pull requests for any question.
-```
+If you use IFF-GUI-3B or its derivatives in your research, please cite our paper (coming soon) 🙏
