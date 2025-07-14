@@ -1,10 +1,12 @@
 ```markdown
 ### Error-Centric Learning for Reasoning Improvement in GUI Agent (AAAI 2026)
-# IFF-GUI-3B 
-*GUI–tailored vision-language models for robust GUI automation*
+![Logo](./IFF-Framework.png)
 
-## 1. Overview
-IFF-GUI-3B is a 3B-parameter vision-language model derived from **Qwen2.5-VL-3B-Instruct**.  
+
+# IFF-GUI-3B 
+*IFF-GUI-3B is a GUI–tailored vision-language models for robust GUI automation*
+
+3B-parameter vision-language model derived from **Qwen2.5-VL-3B-Instruct**.  
 Through multi-stage training and the data/strategy suite introduced in our paper, we obtain a model that
 
 * keeps stable short-term memory,
