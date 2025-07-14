@@ -1,7 +1,7 @@
 ---
 # Error-Centric Learning for Reasoning Improvement in GUI Agent (AAAI 2026)
 <div align="center">
-  <img width="90%" src="IFF-Framework.png">
+  <img width="65%" src="IFF-Framework.png">
 </div>
 
 ## Introduction
