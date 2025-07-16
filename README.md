@@ -79,7 +79,16 @@ Please refer to the code in our example directories (e.g., `./inference/vllm_exa
 ## Usage Example: GUI Episode Reasoning (GUI Automation)
 
 The following Python script demonstrates how to use the model for a GUI automation task. This example assumes you have a local vLLM server running the model. You can adapt the code to fit your specific needs.
+```bash
+# Start vllm service
+nohup python -m vllm.entrypoints.openai.api_server --served-model-name Qwen2.5-VL-3B-Instruct --model ./IFF-GUI-3B -tp 4 > log.txt &
+#nohup python -m vllm.entrypoints.openai.api_server --served-model-name Qwen2.5-VL-72B-Instruct --model ./Qwen2.5-VL-72B-Instruct -tp 8 > log.txt &
 
+# Mount your local directory
+cd ./your_directory/
+python3 -m http.server 6666
+```
+python -m vllm.entrypoints.openai.api_server --served-model-name Qwen2-VL-72B-Instruct --model Qwen/Qwen2-VL-72B-Instruct -tp 8
 ```python
 import requests
 import json
