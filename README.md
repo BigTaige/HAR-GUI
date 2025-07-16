@@ -1,7 +1,7 @@
 ---
 # Error-Centric Learning for Reasoning Improvement in GUI Agent (AAAI 2026)
 <div align="center">
-  <img width="65%" src="IFF-Framework.png">
+  <img width="85%" src="IFF-Framework.png">
 </div>
 
 ## Introduction
@@ -238,3 +238,5 @@ We list all types of training data we use in the IFF framework in `./Data` direc
 ## Citation
 
 If you use IFF-GUI-3B or its derivatives in your research, please cite our paper (coming soon) 🙏
+
+
