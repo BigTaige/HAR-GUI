@@ -43,9 +43,9 @@ pip install -r requirements.txt
 We provide a script to fine-tune the model on your own custom datasets or tasks. Before running, you may need to modify the script to point to your data and set your desired training parameters.
 
 ```bash
-# Run the training script (w/ LoRA)
+# Run the training script (w/ LoRA fine-tuning)
 sh ./training_lora.sh
-# Run the training script (full parameters)
+# Run the training script (full-parameter fine-tuning)
 sh ./training.sh
 ```
 
