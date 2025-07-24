@@ -6,7 +6,7 @@
 
 ## Introduction
 
-**LFF-GUI-3B** is a GUI-tailored basic model built upon Qwen2.5-VL-3B-Instruct. It was developed through our LFF Framework, incorporating a series of tailored training strategies. LFF-GUI-3B integrates a stable short-term memory for episodic reasoning, which can perceive the sequential clues of the episode flexibly and make reasonable use of it. This enhancement of reasoning can assist the GUI agent in executing long-horizon interaction and achieving consistent and persistent growth across GUI-oriented tasks. Further details can be found in our article.
+**LFF-GUI-3B** is a GUI-tailored basic model (native end-to-end GUI agent) built upon Qwen2.5-VL-3B-Instruct. It was developed through our LFF Framework, incorporating a series of tailored training strategies. LFF-GUI-3B integrates a stable short-term memory for episodic reasoning, which can perceive the sequential clues of the episode flexibly and make reasonable use of it. This enhancement of reasoning can assist the GUI agent in executing long-horizon interaction and achieving consistent and persistent growth across GUI-oriented tasks. Further details can be found in our article.
 
 ## Quick Start
 
