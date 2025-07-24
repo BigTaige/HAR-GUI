@@ -6,21 +6,21 @@
 
 ## Introduction
 
-**LFF-GUI-3B** is a GUI-tailored foundational model built upon **Qwen2.5-VL-3B-Instruct**. It was developed through our LFF Framework, incorporating a series of tailored training strategies. LFF-GUI-3B has a stable short-term memory, which can perceive the sequential clues of the episode flexibly and make reasonable use of it. This enhancement of reasoning can assist the GUI agent in executing long-horizon interaction and achieving consistent and persistent growth across GUI-oriented tasks. Further details can be found in our article.
+**LFF-GUI-3B** is a GUI-tailored basic model built upon Qwen2.5-VL-3B-Instruct. It was developed through our LFF Framework, incorporating a series of tailored training strategies. LFF-GUI-3B integrates a stable short-term memory for episodic reasoning, which can perceive the sequential clues of the episode flexibly and make reasonable use of it. This enhancement of reasoning can assist the GUI agent in executing long-horizon interaction and achieving consistent and persistent growth across GUI-oriented tasks. Further details can be found in our article.
 
 ## Quick Start
 
 ### 1. Download Model Weights
 
 We provide the foundational model and several fine-tuned versions for specific tasks. **LFF-GUI-3B** is the base model, while the others are fine-tuned on top of it.
-
+**To comply with AAAI Org's anonymity guidelines, the model weight download address will be provided upon paper acceptance. (HuggingFace/ModelScope/Github)**
 | Model | Description | Download Link |
 | :--- | :--- | :--- |
-| **LFF-GUI-3B** | The GUI-tailored basic model via our LFF Framework. | [Link to be added] |
-| **LFF-GUI-3B-AITW** | Fine-tuned on the AITW dataset. | [Link to be added] |
-| **LFF-GUI-3B-Mind2Web**| Fine-tuned on the Mind2Web dataset. | [Link to be added] |
-| **LFF-GUI-3B-GUIOdyssey**| Fine-tuned on the GUI-Odyssey dataset. | [Link to be added] |
-| **LFF-GUI-3B-GUI-Understanding**| Fine-tuned for comprehensive GUI understanding tasks. | [Link to be added] |
+| **LFF-GUI-3B** | The GUI-tailored basic model via our LFF Framework. | [Link] |
+| **LFF-GUI-3B-AITW** | Fine-tuned on the AITW dataset. | [Link] |
+| **LFF-GUI-3B-Mind2Web**| Fine-tuned on the Mind2Web dataset. | [Link] |
+| **LFF-GUI-3B-GUI-Odyssey**| Fine-tuned on the GUI-Odyssey dataset. | [Link] |
+| **LFF-GUI-3B-GUI-Understanding**| Fine-tuned for comprehensive GUI understanding tasks. | [Link] |
 
 ### 2. Environment Setup
 
@@ -44,37 +44,30 @@ We provide a script to fine-tune the model on your own custom datasets or tasks.
 
 ```bash
 # Run the training script (w/ LoRA fine-tuning)
-sh ./training_lora.sh
+sh training_scripts/scripts/finetune_lora.sh
 # Run the training script (full-parameter fine-tuning)
-sh ./training.sh
+sh training_scripts/scripts/finetune.sh
 ```
 
-## Data Synthesis Pipeline
+## Instruction Templates
 
-This project includes scripts to replicate our data synthesis process.
+All instruction templates used in our paper and experiments can be found in the `/Prompts` directory. These are crucial for replicating our results and for prompting the model effectively.
 
-*   **Guideline Synthesis:** 
-    ```bash
-    sh guideline.sh
-    ```
-*   **System-2 CoT Synthesis:**
-    ```bash
-    sh CoT.sh
-    ```
-*   **Action-to-Summary (Act2Sum) Synthesis:**
-    ```bash
-    sh Act2Sum.sh
-    ```
+## Data Sample
+
+We list all types of training data we use in the LFF framework in `./Data` directory.
 
 ## Deployment and Inference
 
-We provide three example implementations for model deployment in the `/deployment_examples` directory.
-
 To accelerate inference speed, we support two primary methods:
-1.  **Local vLLM Deployment:** For high-throughput, optimized inference.
-2.  **Swift Framework:** An alternative efficient deployment framework.
-
-Please refer to the code in our example directories (e.g., `./inference/vllm_example`) for implementation details and adjustments.
+1.  **Local vLLM Deployment:**
+   ```bash
+    sh Inference/swift_inference.sh
+   ```
+2.  **Swift Framework:**
+  ```bash
+    sh Inference/swift_inference.sh
+  ```
 
 ## Usage Example: GUI Episode Reasoning (GUI Automation)
 
@@ -235,14 +228,6 @@ if __name__ == "__main__":
     with open("your_saving_path.json", "w") as f:
         f.write(json.dumps(inference_data, indent=4))
 ```
-
-## Instruction Templates
-
-All instruction templates used in our paper and experiments can be found in the `/instruction_templates` directory. These are crucial for replicating our results and for prompting the model effectively.
-
-## Data Sample
-
-We list all types of training data we use in the LFF framework in `./Data` directory.
 
 ## Citation
 
