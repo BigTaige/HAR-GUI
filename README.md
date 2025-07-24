@@ -13,7 +13,9 @@
 ### 1. Download Model Weights
 
 We provide the foundational model and several fine-tuned versions for specific tasks. **LFF-GUI-3B** is the base model, while the others are fine-tuned on top of it.
+
 **To comply with AAAI Org's anonymity guidelines, the model weight download address will be provided upon paper acceptance. (HuggingFace/ModelScope/Github)**
+
 | Model | Description | Download Link |
 | :--- | :--- | :--- |
 | **LFF-GUI-3B** | The GUI-tailored basic model via our LFF Framework. | [Link] |
