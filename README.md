@@ -1,26 +1,26 @@
 ---
 # Error-Centric Learning for Reasoning Improvement in GUI Agent (AAAI 2026)
 <div align="center">
-  <img width="85%" src="IFF-Framework.png">
+  <img width="85%" src="LFF-Framework.png">
 </div>
 
 ## Introduction
 
-**IFF-GUI-3B** is a GUI-tailored foundational model built upon **Qwen2.5-VL-3B-Instruct**. It was developed through our IFF Framework, incorporating a series of tailored training strategies. IFF-GUI-3B has a stable short-term memory, which can perceive the sequential clues of the episode flexibly and make reasonable use of it. This enhancement of reasoning can assist the GUI agent in executing long-horizon interaction and achieving consistent and persistent growth across GUI-oriented tasks. Further details can be found in our article.
+**LFF-GUI-3B** is a GUI-tailored foundational model built upon **Qwen2.5-VL-3B-Instruct**. It was developed through our LFF Framework, incorporating a series of tailored training strategies. LFF-GUI-3B has a stable short-term memory, which can perceive the sequential clues of the episode flexibly and make reasonable use of it. This enhancement of reasoning can assist the GUI agent in executing long-horizon interaction and achieving consistent and persistent growth across GUI-oriented tasks. Further details can be found in our article.
 
 ## Quick Start
 
 ### 1. Download Model Weights
 
-We provide the foundational model and several fine-tuned versions for specific tasks. **IFF-GUI-3B** is the base model, while the others are fine-tuned on top of it.
+We provide the foundational model and several fine-tuned versions for specific tasks. **LFF-GUI-3B** is the base model, while the others are fine-tuned on top of it.
 
 | Model | Description | Download Link |
 | :--- | :--- | :--- |
-| **IFF-GUI-3B** | The GUI-tailored basic model via our IFF Framework. | [Link to be added] |
-| **IFF-GUI-3B-AITW** | Fine-tuned on the AITW dataset. | [Link to be added] |
-| **IFF-GUI-3B-Mind2Web**| Fine-tuned on the Mind2Web dataset. | [Link to be added] |
-| **IFF-GUI-3B-GUIOdyssey**| Fine-tuned on the GUI-Odyssey dataset. | [Link to be added] |
-| **IFF-GUI-3B-GUI-Understanding**| Fine-tuned for comprehensive GUI understanding tasks. | [Link to be added] |
+| **LFF-GUI-3B** | The GUI-tailored basic model via our LFF Framework. | [Link to be added] |
+| **LFF-GUI-3B-AITW** | Fine-tuned on the AITW dataset. | [Link to be added] |
+| **LFF-GUI-3B-Mind2Web**| Fine-tuned on the Mind2Web dataset. | [Link to be added] |
+| **LFF-GUI-3B-GUIOdyssey**| Fine-tuned on the GUI-Odyssey dataset. | [Link to be added] |
+| **LFF-GUI-3B-GUI-Understanding**| Fine-tuned for comprehensive GUI understanding tasks. | [Link to be added] |
 
 ### 2. Environment Setup
 
@@ -28,11 +28,11 @@ We recommend using a virtual environment to manage dependencies.
 
 ```bash
 # Clone the repository
-git clone [https://github.com/xxxxxxxxxxxx/IFF-GUI.git]
+git clone [https://github.com/xxxxxxxxxxxx/LFF-GUI.git]
 
 # Create and activate a virtual environment (optional but recommended)
-conda create -n IFF-GUI python=3.10
-conda activate IFF-GUI
+conda create -n LFF-GUI python=3.10
+conda activate LFF-GUI
 
 # Install the required packages
 pip install -r requirements.txt
@@ -81,7 +81,7 @@ Please refer to the code in our example directories (e.g., `./inference/vllm_exa
 The following Python script demonstrates how to use the model for a GUI automation task. This example assumes you have a local vLLM server running the model. You can adapt the code to fit your specific needs.
 ```bash
 # Start vllm service
-nohup python -m vllm.entrypoints.openai.api_server --served-model-name Qwen2.5-VL-3B-Instruct --model ./IFF-GUI-3B -tp 4 > log.txt &
+nohup python -m vllm.entrypoints.openai.api_server --served-model-name Qwen2.5-VL-3B-Instruct --model ./LFF-GUI-3B -tp 4 > log.txt &
 #nohup python -m vllm.entrypoints.openai.api_server --served-model-name Qwen2.5-VL-72B-Instruct --model ./Qwen2.5-VL-72B-Instruct -tp 8 > log.txt &
 
 # Mount your local directory
@@ -130,13 +130,13 @@ Output Format: <summary>One-sentence summary of the action based on the screen i
 def execute(meta_data):
     goal, hist, img_url = meta_data
     inference_temp = INFERENCE_INSTRUCTION.replace("(goal)", goal).replace("(history)", hist)
-    pred = chat_IFF_GUI_3B(img_url, inference_temp)
+    pred = chat_LFF_GUI_3B(img_url, inference_temp)
     return pred
 
 def act2sum_fn(meta_data):
     goal, cur_action, img_url = meta_data
     act2sum_temp = ACT2SUM_INSTRUCTION.replace("(goal)", goal).replace("(action)", cur_action)
-    pred = chat_IFF_GUI_3B(img_url, act2sum_temp)
+    pred = chat_LFF_GUI_3B(img_url, act2sum_temp)
     # pred = chat_72B(img_url, act2sum_temp)
     return pred
 #############################################################################################
@@ -146,7 +146,7 @@ headers = {
      "Content-Type": "application/json"
 }
 
-def chat_IFF_GUI_3B(img_url, query):
+def chat_LFF_GUI_3B(img_url, query):
     content = []
     content.append({"type": "image_url", "image_url": {"url": img_url}})
     content.append({"type": "text", "text": query})
@@ -187,12 +187,12 @@ def chat_72B(img_url, query):
 # from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
 # MAX_IMAGE_PIXELS = 2048*28*28
 # model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
-#     "./IFF-GUI-3B", 
+#     "./LFF-GUI-3B", 
 #     torch_dtype=torch.bfloat16, 
 #     attn_implementation="flash_attention_2", 
 #     device_map="auto"
 # )
-# processor = AutoProcessor.from_pretrained("./IFF-GUI-3B", max_pixels=MAX_IMAGE_PIXELS, padding_side="left")
+# processor = AutoProcessor.from_pretrained("./LFF-GUI-3B", max_pixels=MAX_IMAGE_PIXELS, padding_side="left")
 ##################################################################################
 
 if __name__ == "__main__":
@@ -242,10 +242,10 @@ All instruction templates used in our paper and experiments can be found in the 
 
 ## Data Sample
 
-We list all types of training data we use in the IFF framework in `./Data` directory.
+We list all types of training data we use in the LFF framework in `./Data` directory.
 
 ## Citation
 
-If you use IFF-GUI-3B or its derivatives in your research, please cite our paper (coming soon) 🙏
+If you use LFF-GUI-3B or its derivatives in your research, please cite our paper (coming soon) 🙏
 
 
