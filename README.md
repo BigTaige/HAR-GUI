@@ -1,7 +1,7 @@
 ---
 # History-Aware Reasoning for GUI Agents (AAAI 2026)
 <div align="center">
-  <img width="85%" src="HAR_Framework.png">
+  <img width="90%" src="HAR_Framework.png">
 </div>
 
 ## Introduction
