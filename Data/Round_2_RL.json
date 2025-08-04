@@ -1,0 +1,980 @@
+{
+    "image": [
+        "OS_Atlas_data/desktop_domain/windows_images/20240822_163717_before_screenshot.png",
+        "OS_Atlas_data/desktop_domain/windows_images/20240822_163559_before_screenshot_sub0.png",
+        "OS_Atlas_data/mobile_domain/UIBert_images/screenshots/29389.jpg",
+        "GUI-Odyssey-master/data/screenshots/3990991388929948_1.png",
+        "GUI-Odyssey-master/data/screenshots/3059982137096069_6.png",
+        "GUI-Odyssey-master/data/screenshots/2401969185587326_15.png",
+        "GUI-Odyssey-master/data/screenshots/3056662157939051_2.png",
+        "GUI-Odyssey-master/data/screenshots/0002412570554203_28.png",
+        "OS_Atlas_data/desktop_domain/macos_images/20240905_112329_screenshot.png",
+        "OS_Atlas_data/desktop_domain/windows_images/20240822_012356_before_screenshot.png",
+        "OS_Atlas_data/mobile_domain/mobile_images/c90d1724-4550-4ad5-a96f-ca366ce92040.png",
+        "GUI-Odyssey-master/data/screenshots/2601639617446159_6.png",
+        "OS_Atlas_data/mobile_domain/UIBert_images/screenshots/69384.jpg",
+        "OS_Atlas_data/desktop_domain/macos_images/20240905_111736_screenshot.png",
+        "OS_Atlas_data/mobile_domain/mobile_images/9b38aece-42bc-4453-b35a-7ae3fdc7dd73.png",
+        "OS_Atlas_data/mobile_domain/UIBert_images/screenshots/62817.jpg",
+        "OS_Atlas_data/desktop_domain/macos_images/20240905_113214_screenshot_sub1.png",
+        "GUI-Odyssey-master/data/screenshots/4878497675533653_17.png",
+        "mind2web_images/5cd6189f-084e-4ff2-9753-2110778e2a54-b8f15ccb-15dd-4dd6-9a3f-bfd6d8844c25.jpg",
+        "GUI-Odyssey-master/data/screenshots/2038172360285213_3.png",
+        "OS_Atlas_data/desktop_domain/macos_images/20240905_113014_screenshot_sub0.png",
+        "OS_Atlas_data/mobile_domain/mobile_images/1ad63cef-3c42-488a-98f5-e1debabc7fbc.png",
+        "OS_Atlas_data/mobile_domain/UIBert_images/screenshots/26026.jpg",
+        "GUI-Odyssey-master/data/screenshots/6355326688882781_1.png",
+        "agent_dataset/AITW_simplified/aitw_images/install/1265233704259783634_3.png",
+        "GUI-Odyssey-master/data/screenshots/1005692758238456_17.png",
+        "OS_Atlas_data/mobile_domain/UIBert_images/screenshots/18977.jpg",
+        "agent_dataset/AITW_simplified/aitw_images/webshopping/17759542413660993381_8.png",
+        "OS_Atlas_data/desktop_domain/windows_images/20240828_194224_before_screenshot.png",
+        "OS_Atlas_data/mobile_domain/mobile_images/ed066fe5-8717-40f7-b8c5-a2ed9ea08df5.png",
+        "OS_Atlas_data/desktop_domain/windows_images/20240823_134541_before_screenshot.png",
+        "GUI-Odyssey-master/data/screenshots/5220508073156129_1.png",
+        "GUI-Odyssey-master/data/screenshots/4610849462873908_6.png",
+        "OS_Atlas_data/desktop_domain/macos_images/20240905_112850_screenshot.png",
+        "GUI-Odyssey-master/data/screenshots/2075882160546209_11.png",
+        "GUI-Odyssey-master/data/screenshots/7507746471412941_10.png",
+        "OS_Atlas_data/mobile_domain/mobile_images/742ddab6-98d0-4d07-b2cc-19ae63d32e92.png",
+        "GUI-Odyssey-master/data/screenshots/2775763786406614_14.png",
+        "GUI-Odyssey-master/data/screenshots/2401969185587326_12.png",
+        "OS_Atlas_data/desktop_domain/macos_images/20240905_112343_screenshot.png",
+        "OS_Atlas_data/mobile_domain/mobile_images/14cd7ccd-b216-4981-bc88-0c3850584835.png",
+        "GUI-Odyssey-master/data/screenshots/6924238237310713_11.png"
+    ],
+    "prompt": [
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: Class: NetUIScrollBar. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: Align Left. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: go to g. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Watch a lecture on Virtual Reality on YouTube and then note down the name of the course in Google Docs.</goal>\nActions completed at previous steps: <history>Step1: Enter \"Virtual Reality Course\" into the YouTube search bar to find relevant lectures.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Use the Calculator app to determine the sum of '20+34+2' and then log the total cost in a document or the Monefy app.</goal>\nActions completed at previous steps: <history>Step1: Click the plus button to continue adding numbers in the calculation sequence.\nStep2: Click the '+' button to start adding the next number in the sequence.\nStep3: Click on the number '3' to continue entering the calculation '20+34+2'.\nStep4: Click on the number '4' to continue entering the equation '20+34+2'.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Use Opera to search for information on the properties of a hexagon, then compile your findings into a concise document using Microsoft Word.</goal>\nActions completed at previous steps: <history>Step1: Click on the Microsoft Word app icon to open it and prepare for compiling the document.\nStep2: Clicking the plus icon to create a new document in Microsoft Word.\nStep3: Click on the \"Blank document\" option to start creating a new document in Microsoft Word.\nStep4: Clicking on the \"Regular Hex...\" suggestion to insert pre-written content about hexagons.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Set up an online meeting using ZOOM Cloud Meetings and share the meeting link with your friend via Facebook.</goal>\nActions completed at previous steps: <history>Step1: Click on the Zoom icon to open the application and start setting up the meeting.\nStep2: Click on the \"Send invitation\" button to proceed with sharing the meeting details.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Locate a photograph of a Bougainvillea, use the Plantin app to identify it, and if the identification is accurate, document the image and the plant's name in a Microsoft Word file, utilizing the Opera browser with AI for any additional information needed.</goal>\nActions completed at previous steps: <history>Step1: Scrolling up to locate a suitable photograph of a Bougainvillea for identification.\nStep2: Click on the image of the Bougainvillea flower to select it for identification.\nStep3: Click on the highlighted Bougainvillea image to select it for identification.\nStep4: Clicking the \"Done\" button to finalize the editing of the Bougainvillea image.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: Border. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: Done. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: Disconnect. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Search for a beginner-friendly Yoga workout video on YouTube and set a reminder in your To-Do List app to do it tomorrow morning.</goal>\nActions completed at previous steps: <history>Step1: Click the checkmark button to save the to-do item \"do yoga in the morning\" for May 4th.\nStep2: Return to the home screen to access the YouTube app for searching a yoga workout video.\nStep3: Click on the YouTube app icon to open it and search for a beginner-friendly yoga workout video.\nStep4: Click on the \"10 Minute Yoga For Beginners\" video to view its details and prepare to set a reminder for tomorrow morning.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: select the profile under both default of the page. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: Spa Station. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: Folder: VLCVideos, 10 media files. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: click on the text box beside the text email. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: Format. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Open Chrome and search for a travel guide to visit the Eiffel Tower in Paris. Record the resource website using Simplenote. Use Weather & Radar to select a day without rain. Finally, book a flight from LA using Booking.com.</goal>\nActions completed at previous steps: <history>Step1: Clicking on the note-taking area to start entering information about the travel guide.\nStep2: Enter the URL into the note-taking app to save the travel guide resource.\nStep3: Click on the URL suggestion to add it to the note about the Eiffel Tower travel guide.\nStep4: Click on the URL suggestion to insert it into the note.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:(x,y,typed_text): An action of typing a piece of text at the coordinate point (x,y), e.g., TYPE:(208,1082,Macbook-Pro 16G Black).  \nSELECT:(x,y,option): Opens the Select Menu or Drop-Down List at coordinate (x, y) and selects the option you specify, e.g., SELECT:(59,892,Chicago).\nYour overall goal is: <goal>look at top rated size 5 women Leather Sandals from MICHAEL Michael Kors within $50 to $100.</goal>\nActions completed at previous steps: <history>Step1: Clicking on the \"Sandals\" category to explore available options for women's sandals.\nStep2: Click on the \"Brand\" filter to select MICHAEL Michael Kors as the brand for the sandals.\nStep3: Clicking on the \"Michael Kors\" checkbox to filter the search results for Michael Kors sandals.\nStep4: Selecting 'Customers' Top Rated' to sort the sandals by customer ratings.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Use Likee to open a relaxing soundscape video and then set the Clock app to wake you up at the desired time.</goal>\nActions completed at previous steps: <history>Step1: Click on the Likee app icon to open it.\nStep2: Enter \"70\" using the keypad to set the timer duration.\nStep3: Click the play button to start the timer set for 70 seconds.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: Flyers & Posters. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: Oct 29. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: click on the button which is next to the benjamin franklin. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Start by installing the Likee video app via the Google Play Store. Once the installation is complete, launch the Likee app. Next, navigate to the Setting app to disable the notifications for Likee. Finally, reopen the Likee app to enjoy watching videos.</goal>\nActions completed at previous steps: <history>Step1: Click on the Google Play Store icon to open it and search for the Likee app.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nENTER: Press the ENTER key to submit input content.\nYour overall goal is: <goal>install app \"Google Duo\"</goal>\nActions completed at previous steps: <history>Step1: Return to the home screen to start the process of installing the Google Duo app.\nStep2: Scroll down to view more apps or options on the home screen.\nStep3: Click on the Play Store icon to open it and search for the Google Duo app.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Using Firefox Browser, search for a recipe for Chocolate Chip Cookies. Then, utilize TickTick to create a shopping list of the main ingredients. Finally, add these items to your cart on Ebay.</goal>\nActions completed at previous steps: <history>Step1: Click on the search icon to find the ingredients for the chocolate chip cookies recipe.\nStep2: Scrolling up to view more details or the beginning of the chocolate chip cookie recipe page.\nStep3: Scroll up to view more details of the recipe page.\nStep4: Return to the home screen to switch from the browser to the TickTick app for creating a shopping list.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: select google above the vacation planning. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nENTER: Press the ENTER key to submit input content.\nYour overall goal is: <goal>Add acer predator to the cart on target</goal>\nActions completed at previous steps: <history>Step1: Clicking on the Target website link to navigate to the homepage.\nStep2: Click on the search bar to start searching for \"Acer Predator.\"\nStep3: Enter \"acer predator\" into the search bar to initiate a product search on Target's website.\nStep4: Clicking the search icon to execute the search for \"acer predator\" on Target's website.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: Confirm My Choices. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: SETTINGS. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: Close Outline View. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Choose a nutritious lunch plan for the next day in Quora, jot down the details in Google Keep, and watch a recipe video on YouTube to learn how to prepare one of the dishes.</goal>\nActions completed at previous steps: <history>Step1: Click on the Quora app icon to open it and start searching for a nutritious lunch plan.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Utilize 'Daily Forecast' to check tomorrow's weather forecast, then organize a to-do list in 'Google Docs' based on the forecasted weather conditions.</goal>\nActions completed at previous steps: <history>Step1: Click on the location icon to potentially change or confirm the current location for an accurate weather forecast.\nStep2: Clicking on the \"Settings\" option to explore further settings related to the weather app.\nStep3: Click the \"Add\" button to include another city for weather updates.\nStep4: Click on \"Berlin, Berlin, DE\" to select it for checking the weather forecast.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: Resumes. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Open Firefox and search for a Digital Marketing class. Then, use Ebay to purchase any materials required for the class. Finally, create a calendar reminder in Calendar to set up study sessions.</goal>\nActions completed at previous steps: <history>Step1: Click on the Firefox icon to open the browser.\nStep2: Click on the search bar to begin searching for digital marketing materials on eBay.\nStep3: Typing \"ipad\" into the eBay search bar to find digital marketing materials.\nStep4: Click on the search icon to execute the search for \"iPad\" on eBay.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Using Opera, search for the winners of the 2016 Nobel Prize in Physics. Once you find the information, record it in Notepad - Notes and To Do List.</goal>\nActions completed at previous steps: <history>Step1: Return to the home screen to access Notepad - Notes and To Do List for recording the Nobel Prize winners.\nStep2: Scroll left to locate the Opera browser icon if it is not visible on this screen.\nStep3: Scroll left to navigate to the next page of apps to find Opera.\nStep4: Click on the Chrome browser icon to open it and start searching for the 2016 Nobel Prize in Physics winners.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: Copycat. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Utilize the WOMBO Dream-AI Art Generator to create an artistic image of a sailing boat, then share it via Gmail with caba62244@gmail.com.</goal>\nActions completed at previous steps: <history>Step1: Scroll up to reveal more sharing options and locate Gmail for sharing the image.\nStep2: Click on the Gmail icon to start sharing the image via email.\nStep3: Click on the 'To' field to enter the recipient's email address.\nStep4: Type the email address 'caba62244@gmail.com' into the 'To' field.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Use Opera to search for information on the properties of a hexagon, then compile your findings into a concise document using Microsoft Word.</goal>\nActions completed at previous steps: <history>Step1: Scrolling right to view additional content or options related to regular hexagon properties.\nStep2: Clicking the \"Copy\" option to copy the highlighted text about regular hexagon properties.\nStep3: Returning to the home screen to prepare for compiling the hexagon properties into a document.\nStep4: Click on the Microsoft Word app icon to open it and prepare for compiling the document.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: View. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "Locate the element on the screen with the function or description: Send an update.. Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        [
+            {
+                "content": [
+                    {
+                        "text": null,
+                        "type": "image"
+                    },
+                    {
+                        "text": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Utilize Yandex Navigator to locate a nearby Boxing gym, and subsequently, visit the Google Play Store to download a fitness tracking app for setting your fitness goals.</goal>\nActions completed at previous steps: <history>Step1: Switching from Yandex Navigator to another app by accessing the recent apps menu.\nStep2: Click on the Google Play Store icon to open it and search for a fitness tracking app.\nStep3: Click on the 'Categories' tab to explore different app categories.\nStep4: Enter \"fitness tracking apps\" into the search bar to find relevant apps.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ]
+    ],
+    "ground_truth": [
+        "{'point_2d': [2547, 880], 'label': 'Class: NetUIScrollBar'}",
+        "{'point_2d': [716, 201], 'label': 'Align Left'}",
+        "{'point_2d': [664, 1623], 'label': 'go to g'}",
+        "CLICK:(365,179)",
+        "CLICK:(1712,1273)",
+        "CLICK:(53,1205)",
+        "CLICK:(1290,92)",
+        "COMPLETE",
+        "{'point_2d': [2456, 515], 'label': 'Border'}",
+        "{'point_2d': [618, 606], 'label': 'Done'}",
+        "{'point_2d': [540, 1113], 'label': 'Disconnect'}",
+        "COMPLETE",
+        "{'point_2d': [97, 261], 'label': 'select the profile under both default of the page'}",
+        "{'point_2d': [2710, 242], 'label': 'Spa Station'}",
+        "{'point_2d': [540, 2303], 'label': 'Folder: VLCVideos, 10 media files'}",
+        "{'point_2d': [684, 831], 'label': 'click on the text box beside the text email'}",
+        "{'point_2d': [1239, 87], 'label': 'Format'}",
+        "CLICK:(669,1111)",
+        "CLICK:(208,400)",
+        "HOME",
+        "{'point_2d': [250, 577], 'label': 'Flyers & Posters'}",
+        "{'point_2d': [217, 714], 'label': 'Oct 29'}",
+        "{'point_2d': [1006, 137], 'label': 'click on the button which is next to the benjamin franklin'}",
+        "CLICK:(1213,1113)",
+        "CLICK:(432,66)",
+        "CLICK:(1523,596)",
+        "{'point_2d': [46, 727], 'label': 'select google above the vacation planning'}",
+        "SCROLL:DOWN",
+        "{'point_2d': [1256, 992], 'label': 'Confirm My Choices'}",
+        "{'point_2d': [280, 401], 'label': 'SETTINGS'}",
+        "{'point_2d': [608, 103], 'label': 'Close Outline View'}",
+        "CLICK:(844,257)",
+        "SCROLL:UP",
+        "{'point_2d': [250, 509], 'label': 'Resumes'}",
+        "CLICK:(903,768)",
+        "CLICK:(1227,2800)",
+        "{'point_2d': [308, 1403], 'label': 'Copycat'}",
+        "CLICK:(643,1020)",
+        "CLICK:(663,108)",
+        "{'point_2d': [43, 87], 'label': 'View'}",
+        "{'point_2d': [529, 2214], 'label': 'Send an update.'}",
+        "CLICK:(472,316)"
+    ],
+    "resolution": [
+        [
+            2560,
+            1600
+        ],
+        [
+            1280,
+            800
+        ],
+        [
+            1080,
+            1920
+        ],
+        [
+            720,
+            1280
+        ],
+        [
+            2560,
+            1600
+        ],
+        [
+            720,
+            1280
+        ],
+        [
+            2560,
+            1600
+        ],
+        [
+            1440,
+            3120
+        ],
+        [
+            2880,
+            1800
+        ],
+        [
+            2560,
+            1440
+        ],
+        [
+            1080,
+            2400
+        ],
+        [
+            1440,
+            3120
+        ],
+        [
+            1080,
+            1920
+        ],
+        [
+            2880,
+            1800
+        ],
+        [
+            1080,
+            2400
+        ],
+        [
+            1080,
+            1920
+        ],
+        [
+            1440,
+            900
+        ],
+        [
+            720,
+            1280
+        ],
+        [
+            1280,
+            720
+        ],
+        [
+            2208,
+            1840
+        ],
+        [
+            1440,
+            900
+        ],
+        [
+            1080,
+            2400
+        ],
+        [
+            1080,
+            1920
+        ],
+        [
+            1440,
+            3120
+        ],
+        [
+            540,
+            1170
+        ],
+        [
+            2208,
+            1840
+        ],
+        [
+            540,
+            960
+        ],
+        [
+            720,
+            1440
+        ],
+        [
+            2560,
+            1440
+        ],
+        [
+            1080,
+            2400
+        ],
+        [
+            2560,
+            1440
+        ],
+        [
+            2560,
+            1600
+        ],
+        [
+            1080,
+            2400
+        ],
+        [
+            2880,
+            1800
+        ],
+        [
+            2560,
+            1600
+        ],
+        [
+            1344,
+            2992
+        ],
+        [
+            1080,
+            2400
+        ],
+        [
+            1440,
+            3120
+        ],
+        [
+            720,
+            1280
+        ],
+        [
+            2880,
+            1800
+        ],
+        [
+            1080,
+            2400
+        ],
+        [
+            2208,
+            1840
+        ]
+    ],
+    "history": [
+        "",
+        "",
+        "",
+        "Step1: Enter \"Virtual Reality Course\" into the YouTube search bar to find relevant lectures.\n",
+        "Step1: Click the plus button to continue adding numbers in the calculation sequence.\nStep2: Click the '+' button to start adding the next number in the sequence.\nStep3: Click on the number '3' to continue entering the calculation '20+34+2'.\nStep4: Click on the number '4' to continue entering the equation '20+34+2'.\n",
+        "Step1: Click on the Microsoft Word app icon to open it and prepare for compiling the document.\nStep2: Clicking the plus icon to create a new document in Microsoft Word.\nStep3: Click on the \"Blank document\" option to start creating a new document in Microsoft Word.\nStep4: Clicking on the \"Regular Hex...\" suggestion to insert pre-written content about hexagons.\n",
+        "Step1: Click on the Zoom icon to open the application and start setting up the meeting.\nStep2: Click on the \"Send invitation\" button to proceed with sharing the meeting details.\n",
+        "Step1: Scrolling up to locate a suitable photograph of a Bougainvillea for identification.\nStep2: Click on the image of the Bougainvillea flower to select it for identification.\nStep3: Click on the highlighted Bougainvillea image to select it for identification.\nStep4: Clicking the \"Done\" button to finalize the editing of the Bougainvillea image.\n",
+        "",
+        "",
+        "",
+        "Step1: Click the checkmark button to save the to-do item \"do yoga in the morning\" for May 4th.\nStep2: Return to the home screen to access the YouTube app for searching a yoga workout video.\nStep3: Click on the YouTube app icon to open it and search for a beginner-friendly yoga workout video.\nStep4: Click on the \"10 Minute Yoga For Beginners\" video to view its details and prepare to set a reminder for tomorrow morning.\n",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Step1: Clicking on the note-taking area to start entering information about the travel guide.\nStep2: Enter the URL into the note-taking app to save the travel guide resource.\nStep3: Click on the URL suggestion to add it to the note about the Eiffel Tower travel guide.\nStep4: Click on the URL suggestion to insert it into the note.\n",
+        "Step1: Clicking on the \"Sandals\" category to explore available options for women's sandals.\nStep2: Click on the \"Brand\" filter to select MICHAEL Michael Kors as the brand for the sandals.\nStep3: Clicking on the \"Michael Kors\" checkbox to filter the search results for Michael Kors sandals.\nStep4: Selecting 'Customers' Top Rated' to sort the sandals by customer ratings.\n",
+        "Step1: Click on the Likee app icon to open it.\nStep2: Enter \"70\" using the keypad to set the timer duration.\nStep3: Click the play button to start the timer set for 70 seconds.\n",
+        "",
+        "",
+        "",
+        "Step1: Click on the Google Play Store icon to open it and search for the Likee app.\n",
+        "Step1: Return to the home screen to start the process of installing the Google Duo app.\nStep2: Scroll down to view more apps or options on the home screen.\nStep3: Click on the Play Store icon to open it and search for the Google Duo app.\n",
+        "Step1: Click on the search icon to find the ingredients for the chocolate chip cookies recipe.\nStep2: Scrolling up to view more details or the beginning of the chocolate chip cookie recipe page.\nStep3: Scroll up to view more details of the recipe page.\nStep4: Return to the home screen to switch from the browser to the TickTick app for creating a shopping list.\n",
+        "",
+        "Step1: Clicking on the Target website link to navigate to the homepage.\nStep2: Click on the search bar to start searching for \"Acer Predator.\"\nStep3: Enter \"acer predator\" into the search bar to initiate a product search on Target's website.\nStep4: Clicking the search icon to execute the search for \"acer predator\" on Target's website.\n",
+        "",
+        "",
+        "",
+        "Step1: Click on the Quora app icon to open it and start searching for a nutritious lunch plan.\n",
+        "Step1: Click on the location icon to potentially change or confirm the current location for an accurate weather forecast.\nStep2: Clicking on the \"Settings\" option to explore further settings related to the weather app.\nStep3: Click the \"Add\" button to include another city for weather updates.\nStep4: Click on \"Berlin, Berlin, DE\" to select it for checking the weather forecast.\n",
+        "",
+        "Step1: Click on the Firefox icon to open the browser.\nStep2: Click on the search bar to begin searching for digital marketing materials on eBay.\nStep3: Typing \"ipad\" into the eBay search bar to find digital marketing materials.\nStep4: Click on the search icon to execute the search for \"iPad\" on eBay.\n",
+        "Step1: Return to the home screen to access Notepad - Notes and To Do List for recording the Nobel Prize winners.\nStep2: Scroll left to locate the Opera browser icon if it is not visible on this screen.\nStep3: Scroll left to navigate to the next page of apps to find Opera.\nStep4: Click on the Chrome browser icon to open it and start searching for the 2016 Nobel Prize in Physics winners.\n",
+        "",
+        "Step1: Scroll up to reveal more sharing options and locate Gmail for sharing the image.\nStep2: Click on the Gmail icon to start sharing the image via email.\nStep3: Click on the 'To' field to enter the recipient's email address.\nStep4: Type the email address 'caba62244@gmail.com' into the 'To' field.\n",
+        "Step1: Scrolling right to view additional content or options related to regular hexagon properties.\nStep2: Clicking the \"Copy\" option to copy the highlighted text about regular hexagon properties.\nStep3: Returning to the home screen to prepare for compiling the hexagon properties into a document.\nStep4: Click on the Microsoft Word app icon to open it and prepare for compiling the document.\n",
+        "",
+        "",
+        "Step1: Switching from Yandex Navigator to another app by accessing the recent apps menu.\nStep2: Click on the Google Play Store icon to open it and search for a fitness tracking app.\nStep3: Click on the 'Categories' tab to explore different app categories.\nStep4: Enter \"fitness tracking apps\" into the search bar to find relevant apps.\n"
+    ],
+    "task": [
+        "grounding",
+        "grounding",
+        "grounding",
+        "episode",
+        "episode",
+        "episode",
+        "episode",
+        "episode",
+        "grounding",
+        "grounding",
+        "grounding",
+        "episode",
+        "grounding",
+        "grounding",
+        "grounding",
+        "grounding",
+        "grounding",
+        "episode",
+        "episode",
+        "episode",
+        "grounding",
+        "grounding",
+        "grounding",
+        "episode",
+        "episode",
+        "episode",
+        "grounding",
+        "episode",
+        "grounding",
+        "grounding",
+        "grounding",
+        "episode",
+        "episode",
+        "grounding",
+        "episode",
+        "episode",
+        "grounding",
+        "episode",
+        "episode",
+        "grounding",
+        "grounding",
+        "episode"
+    ]
+}

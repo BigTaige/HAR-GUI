@@ -1,0 +1,866 @@
+[
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "WebSRC/auto/10/processed_data/1000011.png",
+        "width": 1110,
+        "height": 686,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nHow much is the 2011 Chrysler Town & Country in retail? answer with numbers or phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "$11,700"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "Rico/37490.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nLocate the element on the screen with the function or description \"click on green line above the text seats available\". Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}"
+            },
+            {
+                "from": "gpt",
+                "value": "{\"point_2d\": [405, 1660], \"label\": \"click on green line above the text seats available\"}"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Act2Sum",
+        "image": "GUI-Odyssey-master/data/screenshots/2968269671538998_17.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>Step-by-step GUI navigation task. Briefly summarize the current action.\nAction space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\n\nGoal: <goal>Use Chrome to search for a new hiking trail, check the weekend weather forecast on Windy.com-Weather Forecast, and then invite Tzhau Jau to join via Instagram.</goal>\nCurrent action: <action>CLICK:(560,2951)</action>\n\nOutput Format: <summary>One-sentence summary of the action based on the screen image.</summary>"
+            },
+            {
+                "from": "gpt",
+                "value": "<summary>Click on the message input field to start typing a follow-up message to Tzhau Jau.</summary>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Act2Sum",
+        "image": "mind2web_images/4775a0e3-3dad-46f2-b719-b1c0dae9e147-a008a7f6-6480-487f-abda-be44b38c3d47.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>Step-by-step GUI navigation task. Briefly summarize the current action.\nAction space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:(x,y,typed_text): An action of typing a piece of text at the coordinate point (x,y), e.g., TYPE:(208,1082,Macbook-Pro 16G Black).  \nSELECT:(x,y,option): Opens the Select Menu or Drop-Down List at coordinate (x, y) and selects the option you specify, e.g., SELECT:(59,892,Chicago).\n\nGoal: <goal>Find tortillas bread in grocery stock near  zip 59901 and add 5 pieces of 12 pcs pack in the cart and view the cart.</goal>\nCurrent action: <action>CLICK:(354,417)</action>\n\nOutput Format: <summary>One-sentence summary of the action based on the screen image.</summary>"
+            },
+            {
+                "from": "gpt",
+                "value": "<summary>Click on the \"Grocery\" category to explore available grocery items.</summary>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: System-2 reasoning distillation",
+        "image": "mind2web_images/1282a011-194c-40c4-8f76-875e502cdd53-1d412587-c49d-49e7-aa72-4b12e47b9c59.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:(x,y,typed_text): An action of typing a piece of text at the coordinate point (x,y), e.g., TYPE:(208,1082,Macbook-Pro 16G Black).  \nSELECT:(x,y,option): Opens the Select Menu or Drop-Down List at coordinate (x, y) and selects the option you specify, e.g., SELECT:(59,892,Chicago).\nYour overall goal is: <goal>Browse laptops with at least 16gb of ram and under $700.</goal>\nActions completed at previous steps: <history>This is the task's initial state.</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>"
+            },
+            {
+                "from": "gpt",
+                "value": "<think>\nTo browse laptops with at least 16GB of RAM and under $700, I need to start by searching for laptops. The search bar at the top of the page is the most direct way to begin this process. I can type in specific keywords related to my goal there.\n</think>\n<answer>TYPE:(400,30,\"laptops 16GB RAM under $700\")</answer>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "Rico/45204.jpg",
+        "width": 1080,
+        "height": 1920,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nDescribe the function within the selected area[119, 1662, 960, 1793] of the image. answer with phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "advatisment"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "OS_Atlas_data/desktop_domain/windows_images/20240823_073356_before_screenshot_sub0.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nLocate the element on the screen with the function or description \"Recipes - MSN - Sleeping\". Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}"
+            },
+            {
+                "from": "gpt",
+                "value": "{\"point_2d\": [414, 17], \"label\": \"Recipes - MSN - Sleeping\"}"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Act2Sum",
+        "image": "aitw_images/install/15442447268309178171_8.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>Step-by-step GUI navigation task. Briefly summarize the current action.\nAction space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nENTER: Press the ENTER key to submit input content.\n\nGoal: <goal>uninstall \"Speedtest by Ookla\"</goal>\nCurrent action: <action>CLICK:(367,75)</action>\n\nOutput Format: <summary>One-sentence summary of the action based on the screen image.</summary>"
+            },
+            {
+                "from": "gpt",
+                "value": "<summary>Clicking the 'X' button to close or exit the search bar related to \"Speedtest by Ookla.\"</summary>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: System-2 reasoning distillation",
+        "image": "aitw_images/single/10064157588120602035.225-314.choose first search result and add to cart _1.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nENTER: Press the ENTER key to submit input content.\nYour overall goal is: <goal>choose first search result and add to cart </goal>\nActions completed at previous steps: <history>Step1: Click on the first search result for the ASUS Zenbook 15.6\" FHD 2-in-1 Touchscreen Business Laptop.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>"
+            },
+            {
+                "from": "gpt",
+                "value": "<think>\nTo achieve the goal of adding the ASUS Zenbook to the cart, I need to locate the 'Add to Cart' button. It's likely below the visible area, so scrolling down is necessary.\n</think>\n<answer>SCROLL:DOWN</answer>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: System-2 reasoning distillation",
+        "image": "aitw_images/general/6460523908941065501_12.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nENTER: Press the ENTER key to submit input content.\nYour overall goal is: <goal>What's a good restaurant in Denver?</goal>\nActions completed at previous steps: <history>Step1: Clicking the microphone icon to initiate a voice search for \"inver restaurant review.\"\nStep2: Clicking on the search bar to modify or refine the search query for better results.\nStep3: Clicking on the account menu icon to access account management options.\nStep4: The current search results are for \"Inver Restaurant\" instead of restaurants in Denver; the next step should involve correcting the search query to focus on Denver restaurants.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>"
+            },
+            {
+                "from": "gpt",
+                "value": "<think>\nTo achieve the goal of finding a good restaurant in Denver, I need to correct the search query. The current query is focused on 'Inver restaurant,' which is not relevant to Denver. I should clear the existing search term and enter a new one that targets Denver restaurants.\n</think>\n<answer>CLICK:(649,96)</answer>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "OS_Atlas_data/web_domain/fineweb_3m_images_s12/360cd0343bf95963b91bc9d12701c66b_section_2_original.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nLocate the element on the screen with the function or description \"news\". Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}"
+            },
+            {
+                "from": "gpt",
+                "value": "{\"point_2d\": [611, 778], \"label\": \"news\"}"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "Rico/59799.jpg",
+        "width": 1080,
+        "height": 1920,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nHow many of the input fields require you to enter information? answer with numbers or phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "4"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "WebSRC/auto/03/processed_data/0300293.png",
+        "width": 1000,
+        "height": 583,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat horsepower is the vehicle capable of? answer with numbers or phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "155 hp"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "Rico/1990.jpg",
+        "width": 540,
+        "height": 960,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat is the origin date? keep the generated content as simple as possible."
+            },
+            {
+                "from": "gpt",
+                "value": "The origin date is 28/12/2016."
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "WebSRC/auto/09/processed_data/0900069.png",
+        "width": 948,
+        "height": 636,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat's the engine info of the 2015 Lexus NX 200t F Sport 4x2? answer with numbers or phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "2L 235hp@4800 In-Line 4"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: System-2 reasoning distillation",
+        "image": "GUI-Odyssey-master/data/screenshots/9194997277192901_9.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Alter the language on your phone to Portuguese (Brazil) via the 'Setting' app, and then open the 'Calendar' app to verify the change.</goal>\nActions completed at previous steps: <history>Step1: Click on \"Add a language\" to proceed with adding Portuguese (Brazil).\nStep2: Click on the search icon to find Portuguese (Brazil) quickly.\nStep3: Enter \"Portuguese\" in the search bar to find and select Portuguese (Brazil).\nStep4: Selecting \"Portugu\u00eas\" from the search results to proceed with changing the language setting.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>"
+            },
+            {
+                "from": "gpt",
+                "value": "<think>\nTo achieve the goal of changing the phone's language to Portuguese (Brazil), I need to select 'Brasil' from the list. This will set the language to the desired variant, allowing me to proceed to the next step of verifying the change in the Calendar app.\n</think>\n<answer>CLICK:(184,320)</answer>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: System-2 reasoning distillation",
+        "image": "GUI-Odyssey-master/data/screenshots/0756294276511042_1.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Locate a recent news article related to animal care using Google News and then add this event to your Calendar.</goal>\nActions completed at previous steps: <history>Step1: Click on the 'News' app icon to open Google News and search for a recent article on animal care.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>"
+            },
+            {
+                "from": "gpt",
+                "value": "<think>To find a recent news article related to animal care, I need to either search specifically for such articles or navigate through relevant sections that might contain them. Since the current screen shows general top stories, I should look for a way to refine my search or explore other categories that may include animal care topics.\n</think>\n<answer>CLICK:(112,240)</answer>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: System-2 reasoning distillation",
+        "image": "GUI-Odyssey-master/data/screenshots/1694780222663274_9.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Using the 'Basic Calculator: GPA & Math' app, calculate today's total cost '100+23+2' and then record the result in the 'Google Keep' app or your preferred budgeting application.</goal>\nActions completed at previous steps: <history>Step1: Click on the number '2' button to continue entering the calculation sequence.\nStep2: Click on the '00' button to add two zeros after the number '1'.\nStep3: Click the '+' button to add the next number in the sequence for the calculation.\nStep4: Click on the number '2' to continue entering the calculation '100+23+2'.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>"
+            },
+            {
+                "from": "gpt",
+                "value": "<think>\nTo complete the calculation '100 + 23 + 2', I need to enter the digit '3' next, as the current input shows '100 + 2'. This will allow me to finish the equation correctly before pressing '=' to get the result.\n</think>\n<answer>CLICK:(471,922)</answer>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "Rico/8251.jpg",
+        "width": 1080,
+        "height": 1920,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhose rest time is it? answer with numbers or phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "<no answer>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Act2Sum",
+        "image": "aitw_images/googleapps/9941260150557153778_3.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>Step-by-step GUI navigation task. Briefly summarize the current action.\nAction space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nENTER: Press the ENTER key to submit input content.\n\nGoal: <goal>open app \"Adobe Acrobat Reader: Edit PDF\" (install if not already installed) and go to login screen</goal>\nCurrent action: <action>TYPE:adobe acrobat</action>\n\nOutput Format: <summary>One-sentence summary of the action based on the screen image.</summary>"
+            },
+            {
+                "from": "gpt",
+                "value": "<summary>Typing \"adobe acrobat\" into the search bar to find the app for installation or opening.</summary>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "Rico/40997.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nLocate the element on the screen with the function or description \"click on the third logo below brands\". Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}"
+            },
+            {
+                "from": "gpt",
+                "value": "{\"point_2d\": [207, 708], \"label\": \"click on the third logo below brands\"}"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: System-2 reasoning distillation",
+        "image": "mind2web_images/9572e7bd-0365-4339-899d-1d1dc8504543-09906659-140d-4f28-bfc2-14222fa6aa19.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:(x,y,typed_text): An action of typing a piece of text at the coordinate point (x,y), e.g., TYPE:(208,1082,Macbook-Pro 16G Black).  \nSELECT:(x,y,option): Opens the Select Menu or Drop-Down List at coordinate (x, y) and selects the option you specify, e.g., SELECT:(59,892,Chicago).\nYour overall goal is: <goal>Reserve a lowest priced car for pickup from Birmingham Airport, Alabama, at 11 am on March 22, 2023, and the return location is Montogomery Airport, Alabama, at 5 pm on March 25, 2023.</goal>\nActions completed at previous steps: <history>Step1: Select the pick-up time to 11:00 AM for March 22, 2023.\nStep2: Click on the return date dropdown to change the date from March 22, 2023, to March 25, 2023.\nStep3: Click on March 25, 2023, to set it as the return date for the vehicle reservation.\nStep4: Select the return time to be 5:00 PM on March 25, 2023.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>"
+            },
+            {
+                "from": "gpt",
+                "value": "<think>\nTo proceed with reserving a car, I need to browse available vehicles. The 'Browse Vehicles' button seems like the logical next step to view options and find the lowest-priced car that meets the criteria.\n</think>\n<answer>\nCLICK:(965,154)\n</answer>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: System-2 reasoning distillation",
+        "image": "GUI-Odyssey-master/data/screenshots/1831816944500201_1.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Using Firefox, search for a Horror movie and then watch it on Tubi: Movies & Live TV.</goal>\nActions completed at previous steps: <history>Step1: Click on the Firefox icon to open the browser.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>"
+            },
+            {
+                "from": "gpt",
+                "value": "<think>\nTo achieve the goal of watching a horror movie on Tubi, I need to click on the link that directs me to Tubi's horror category. This will likely take me to a page where I can select a movie to watch.\n</think>\n<answer>CLICK:(328,825)</answer>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "OS_Atlas_data/desktop_domain/linux_images/output_20240911_213607_original_screenshot_sub0.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nLocate the element on the screen with the function or description \"Select Data Area\". Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}"
+            },
+            {
+                "from": "gpt",
+                "value": "{\"point_2d\": [630, 455], \"label\": \"Select Data Area\"}"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "WebSRC/auto/09/processed_data/0900053.png",
+        "width": 948,
+        "height": 636,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat is the passenger capacity of 2013 Chevrolet Equinox AWD LS? answer with numbers or phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "5 Seats"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Act2Sum",
+        "image": "GUI-Odyssey-master/data/screenshots/3949086303982486_1.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>Step-by-step GUI navigation task. Briefly summarize the current action.\nAction space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\n\nGoal: <goal>Using Firefox, look up the winners of the 2020 Nobel Prize in Physics and then document the details in Simplenote.</goal>\nCurrent action: <action>CLICK:(1120,655)</action>\n\nOutput Format: <summary>One-sentence summary of the action based on the screen image.</summary>"
+            },
+            {
+                "from": "gpt",
+                "value": "<summary>Click on the search bar to modify the query to \"2020 Nobel Prize winners in Physics.\"</summary>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Act2Sum",
+        "image": "GUI-Odyssey-master/data/screenshots/0117550419342475_4.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>Step-by-step GUI navigation task. Briefly summarize the current action.\nAction space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\n\nGoal: <goal>Plan an adventure-themed movie night by selecting a film on Opera, adding some snacks to your Amazon cart, sending out invites through Facebook Messenger, and setting a reminder on your Clock app. Make sure to invite Victor James.</goal>\nCurrent action: <action>CLICK:(555,2273)</action>\n\nOutput Format: <summary>One-sentence summary of the action based on the screen image.</summary>"
+            },
+            {
+                "from": "gpt",
+                "value": "<summary>Click on the \"Godzilla\" movie option to select it for the adventure-themed movie night.</summary>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "WebSRC/auto/03/processed_data/0300573.png",
+        "width": 1000,
+        "height": 559,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat is the dimension of the front hip room? answer with numbers or phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "63 \""
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "OS_Atlas_data/desktop_domain/windows_images/20240826_165152_before_screenshot_sub0.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nLocate the element on the screen with the function or description \"Paste\". Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}"
+            },
+            {
+                "from": "gpt",
+                "value": "{\"point_2d\": [28, 103], \"label\": \"Paste\"}"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "WebSRC/auto/10/processed_data/1000024.png",
+        "width": 1110,
+        "height": 686,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nHow much is the 2012 Infiniti M37 in retail? answer with numbers or phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "$14,500"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Act2Sum",
+        "image": "GUI-Odyssey-master/data/screenshots/8127137441122756_21.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>Step-by-step GUI navigation task. Briefly summarize the current action.\nAction space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\n\nGoal: <goal>Organize a sci-fi movie night by first selecting a film, then add snacks to your Amazon shopping cart. Use Messenger to invite Victor James, and set a reminder on your Clock. For any research or additional information, you can use DuckDuckgo.</goal>\nCurrent action: <action>HOME</action>\n\nOutput Format: <summary>One-sentence summary of the action based on the screen image.</summary>"
+            },
+            {
+                "from": "gpt",
+                "value": "<summary>Return to the home screen to proceed with organizing the sci-fi movie night tasks.</summary>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "Rico/37603.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nLocate the element on the screen with the function or description \"the black colored icon with flash symbol at top right of the page\". Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}"
+            },
+            {
+                "from": "gpt",
+                "value": "{\"point_2d\": [774, 121], \"label\": \"the black colored icon with flash symbol at top right of the page\"}"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "OS_Atlas_data/mobile_domain/mobile_images/f872d50c-a776-4bd1-a506-8358ce760d6c.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nLocate the element on the screen with the function or description \"Breakfast Burritos\". Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}"
+            },
+            {
+                "from": "gpt",
+                "value": "{\"point_2d\": [580, 2259], \"label\": \"Breakfast Burritos\"}"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "OS_Atlas_data/web_domain/fineweb_3m_images_s12/4dc7a644c4031412e37c4e16fb8f29e4_section_4_original.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nLocate the element on the screen with the function or description \"CONTACT SALES\". Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}"
+            },
+            {
+                "from": "gpt",
+                "value": "{\"point_2d\": [941, 389], \"label\": \"CONTACT SALES\"}"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: System-2 reasoning distillation",
+        "image": "GUI-Odyssey-master/data/screenshots/2177855105477564_10.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\nYour overall goal is: <goal>Using Firefox, identify the most popular Ford car product and then verify its price on the Carlist.my - New and Used Car app.</goal>\nActions completed at previous steps: <history>Step1: Return to the home screen to access the Carlist.my app for price verification.\nStep2: Scroll left to find the Firefox app for launching the browser.\nStep3: Click on the Carlist.my app icon to open it.\nStep4: Clicking the back arrow to return to the previous screen for further search options.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>"
+            },
+            {
+                "from": "gpt",
+                "value": "<think>\nTo align with the goal of identifying the most popular Ford car and verifying its price, I need to change the search query from 'Audi Q5' to a relevant Ford model. The next logical step is to clear the current search input so that I can enter the correct Ford model name.\n</think>\n<answer>CLICK:(657,90)</answer>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: System-2 reasoning distillation",
+        "image": "aitw_images/webshopping/3786972650337133188_0.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nENTER: Press the ENTER key to submit input content.\nYour overall goal is: <goal>Show the shopping cart on walmart.com. Search for \"razer thresher\" on walmart.com, select the first entry, and add it to the cart.</goal>\nActions completed at previous steps: <history>This is the task's initial state.</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>"
+            },
+            {
+                "from": "gpt",
+                "value": "<think>\nTo achieve the goal of searching for \"razer thresher\" on Walmart.com and adding it to the cart, I need to navigate away from YouTube and open a web browser or the Walmart app. The current screen does not provide any direct means to access Walmart.com or its shopping features.\n</think>\n<answer>HOME</answer>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "WebSRC/auto/09/processed_data/0900006.png",
+        "width": 948,
+        "height": 636,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat is the feature of the engine for 2016 Acura RDX? answer with numbers or phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "3.5L 279hp@6200 V 6"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: System-2 reasoning distillation",
+        "image": "mind2web_images/66d12284-5525-42d2-a66f-fe5c460b7764-410c37f5-5711-41ac-893c-9b0a78045d84.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:(x,y,typed_text): An action of typing a piece of text at the coordinate point (x,y), e.g., TYPE:(208,1082,Macbook-Pro 16G Black).  \nSELECT:(x,y,option): Opens the Select Menu or Drop-Down List at coordinate (x, y) and selects the option you specify, e.g., SELECT:(59,892,Chicago).\nYour overall goal is: <goal>Order popcorn at AMC Grove City 14</goal>\nActions completed at previous steps: <history>This is the task's initial state.</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>"
+            },
+            {
+                "from": "gpt",
+                "value": "<think>\nTo order popcorn at AMC Grove City 14, I need to navigate to the appropriate section where food and drinks can be ordered. The 'Order Food & Drinks' link under the 'Perfectly Popcorn' section seems like the right choice to proceed with ordering popcorn.\n</think>\n<answer>CLICK:(1030,322)</answer>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "WebSRC/auto/09/processed_data/0900081.png",
+        "width": 948,
+        "height": 636,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nName the drive type of 2014 Dodge Challenger SXT Plus answer with numbers or phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "RWD"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: System-2 reasoning distillation",
+        "image": "aitw_images/single/13745977497250534677.70-191.Go to chrome search bar and search & open target_1.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nENTER: Press the ENTER key to submit input content.\nYour overall goal is: <goal>Go to chrome search bar and search & open target</goal>\nActions completed at previous steps: <history>Step1: Click on the browser's address bar to enter a new URL or search query.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>"
+            },
+            {
+                "from": "gpt",
+                "value": "<think>\nTo achieve the goal of searching for and opening Target, I need to type 'target' into the search bar since it is already selected and ready for input.\n</think>\n<answer>TYPE:target</answer>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "Rico/63038.jpg",
+        "width": 1080,
+        "height": 1920,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nDescribe the function within the selected area[616, 63, 708, 218] of the image. answer with phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "books"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "WebSRC/auto/03/processed_data/0300530.png",
+        "width": 1000,
+        "height": 607,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat is the front shoulder room's size? answer with numbers or phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "59 \""
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "OS_Atlas_data/desktop_domain/windows_images/20240824_075103_before_screenshot_sub0.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nLocate the element on the screen with the function or description \"YouTube\". Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}"
+            },
+            {
+                "from": "gpt",
+                "value": "{\"point_2d\": [342, 20], \"label\": \"YouTube\"}"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Act2Sum",
+        "image": "GUI-Odyssey-master/data/screenshots/3371182349330213_5.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>Step-by-step GUI navigation task. Briefly summarize the current action.\nAction space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\n\nGoal: <goal>Research a Spanish language class on Facebook, purchase the necessary materials for the class on eBay, and create a study reminder in your Calendar.</goal>\nCurrent action: <action>SCROLL:UP</action>\n\nOutput Format: <summary>One-sentence summary of the action based on the screen image.</summary>"
+            },
+            {
+                "from": "gpt",
+                "value": "<summary>Scrolling up to explore more posts related to Spanish language classes on Facebook.</summary>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "Rico/58142.jpg",
+        "width": 1080,
+        "height": 1920,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nHow many items are on sale? answer with numbers or phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "4"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: System-2 reasoning distillation",
+        "image": "mind2web_images/3358dffd-3673-435b-bfcb-cb242a2c622c-61a9ea08-e8d9-4584-affd-51e292f094e5.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:(x,y,typed_text): An action of typing a piece of text at the coordinate point (x,y), e.g., TYPE:(208,1082,Macbook-Pro 16G Black).  \nSELECT:(x,y,option): Opens the Select Menu or Drop-Down List at coordinate (x, y) and selects the option you specify, e.g., SELECT:(59,892,Chicago).\nYour overall goal is: <goal>Browse round-trip bus tickets from Houston to Dallas leaving on May 7th and returning a week later.</goal>\nActions completed at previous steps: <history>Step1: Enter \"Houston\" in the 'From' field for the departure location.\nStep2: Clicking on \"Houston, TX\" confirms it as the departure city for the trip.\nStep3: Enter \"Dallas\" as the destination city in the 'To' field.\nStep4: Selecting \"Dallas, TX\" as the destination city for the round-trip bus ticket search.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>"
+            },
+            {
+                "from": "gpt",
+                "value": "<think>\nTo proceed with booking the round-trip bus tickets, I need to set the correct departure date. The current date is set to 'Today', but the goal requires setting the departure date to May 7th. Therefore, I should click on the 'Leaving' date field to open the calendar and select the appropriate date.\n</think>\n<answer>\nCLICK:(820,440) \n</answer>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "WebSRC/auto/03/processed_data/0300571.png",
+        "width": 1000,
+        "height": 559,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat is the type of drivetrain? answer with numbers or phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "rear-wheel"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "WebSRC/auto/03/processed_data/0300579.png",
+        "width": 1000,
+        "height": 559,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhich drivetrain is used in this vehicle? answer with numbers or phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "four-wheel"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Act2Sum",
+        "image": "GUI-Odyssey-master/data/screenshots/5184084813710828_6.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>Step-by-step GUI navigation task. Briefly summarize the current action.\nAction space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\n\nGoal: <goal>First, go to the Google Play Store and uninstall the TikTok app. After that, verify that TikTok has been successfully uninstalled. Next, download the Triller app from the Google Play Store and open it.</goal>\nCurrent action: <action>HOME</action>\n\nOutput Format: <summary>One-sentence summary of the action based on the screen image.</summary>"
+            },
+            {
+                "from": "gpt",
+                "value": "<summary>Return to the home screen to start the process of uninstalling TikTok if it is installed.</summary>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "OS_Atlas_data/mobile_domain/UIBert_images/screenshots/55247.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nLocate the element on the screen with the function or description \"go to the text at the top right of the page\". Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}"
+            },
+            {
+                "from": "gpt",
+                "value": "{\"point_2d\": [988, 270], \"label\": \"go to the text at the top right of the page\"}"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "Rico/8510.jpg",
+        "width": 1080,
+        "height": 1920,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat is the condition to unlock the feature? keep the generated content as simple as possible."
+            },
+            {
+                "from": "gpt",
+                "value": "You need to upgrade to the Pro version to unlock the feature."
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: System-2 reasoning distillation",
+        "image": "mind2web_images/8368b990-c6ca-4cfe-a7ab-c2a88697639d-51b4faa6-0136-4f49-baad-9bd1bc178051.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:(x,y,typed_text): An action of typing a piece of text at the coordinate point (x,y), e.g., TYPE:(208,1082,Macbook-Pro 16G Black).  \nSELECT:(x,y,option): Opens the Select Menu or Drop-Down List at coordinate (x, y) and selects the option you specify, e.g., SELECT:(59,892,Chicago).\nYour overall goal is: <goal>Build a PC with Intel i9 Raptor Lake 24 cores, Asus ROG strix Z790 motherboard, Asus TUF Rtx 4090 and remaining all compatible products with SSD.</goal>\nActions completed at previous steps: <history>Step1: Clicking \"START A NEW BUILD\" to initiate a new PC build process.\nStep2: Clicking on the \"Select\" button for the Intel Core i9-13900K Desktop Processor to add it to the build list.\nStep3: Clicking the \"+ SELECT\" button to add the next component to the PC build list.\nStep4: Clicking the \"Select\" button for the ASUS ROG STRIX Z790-E GAMING WIFI ATX Motherboard to add it to the build list.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>"
+            },
+            {
+                "from": "gpt",
+                "value": "<think>\nTo continue building the PC, I need to select the next component, which is the video card. The current screen shows the option to select a video card, and the goal specifies using an ASUS TUF RTX 4090. Therefore, I should proceed to click the \"+ SELECT\" button under the Video Cards section to choose this component.\n</think>\n<answer>CLICK:(619,197)</answer>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "OS_Atlas_data/web_domain/fineweb_3m_images_s12/271f547c160db50ef8644ad6627e0ec0_section_3_original.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nLocate the element on the screen with the function or description \"Maine\". Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}"
+            },
+            {
+                "from": "gpt",
+                "value": "{\"point_2d\": [1395, 165], \"label\": \"Maine\"}"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "Rico/264.jpg",
+        "width": 1080,
+        "height": 1920,
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat is the name? answer with numbers or phrases rather than sentence."
+            },
+            {
+                "from": "gpt",
+                "value": "jonas"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Act2Sum",
+        "image": "GUI-Odyssey-master/data/screenshots/7541654895458027_9.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>Step-by-step GUI navigation task. Briefly summarize the current action.\nAction space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\n\nGoal: <goal>First, enjoy a classical music album on Pandora. Once you've finished listening, share the album's name on Threads with moments.</goal>\nCurrent action: <action>CLICK:(1106,1687)</action>\n\nOutput Format: <summary>One-sentence summary of the action based on the screen image.</summary>"
+            },
+            {
+                "from": "gpt",
+                "value": "<summary>Clicking on the profile icon to navigate to the user's profile page.</summary>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "OS_Atlas_data/mobile_domain/UIBert_images/screenshots/64203.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nLocate the element on the screen with the function or description \"click on the help icon\". Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}"
+            },
+            {
+                "from": "gpt",
+                "value": "{\"point_2d\": [1016, 137], \"label\": \"click on the help icon\"}"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Grounding and understanding",
+        "image": "OS_Atlas_data/web_domain/fineweb_3m_images_s12/717fb1daa2c378b9897e86ef4a8c6c9d_section_6_original.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nLocate the element on the screen with the function or description \"How Do You Know If Deer Meat Is Bad?\". Keep the following output format: {\"point_2d\": [x,y], \"label\": description of the target element}"
+            },
+            {
+                "from": "gpt",
+                "value": "{\"point_2d\": [649, 47], \"label\": \"How Do You Know If Deer Meat Is Bad?\"}"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: System-2 reasoning distillation",
+        "image": "aitw_images/install/5820815803047434256_4.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>You are a skilled assistant, interacting with the screen to accomplish the user's goals.\nHere is the action space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nENTER: Press the ENTER key to submit input content.\nYour overall goal is: <goal>uninstall \"Life360: Find Family & Friends\"</goal>\nActions completed at previous steps: <history>Step1: Return to the home screen to access the app drawer or settings for uninstalling an app.\nStep2: Return to the home screen to access the app drawer or settings for uninstalling an app.\nStep3: Scroll down to locate the app drawer and find the \"Life360: Find Family & Friends\" app for uninstallation.\nStep4: Click on the Play Store icon to open it.\n</history>\nThe output format should be as follows:\n<think>Analyze step by step based on guidance and screen state to choose the action.</think>\n<answer>The action you finally choose from \"action space\".</answer>"
+            },
+            {
+                "from": "gpt",
+                "value": "<think>\nTo uninstall 'Life360: Find Family & Friends', I need to navigate to its page in the Play Store. Currently, I'm viewing the Indeed Job Search app page, which means I need to search for the Life360 app instead.\n</think>\n<answer>CLICK:(568,80)</answer>"
+            }
+        ]
+    },
+    {
+        "id": "Warm-up Stage: Act2Sum",
+        "image": "GUI-Odyssey-master/data/screenshots/1840933583772409_9.png",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>Step-by-step GUI navigation task. Briefly summarize the current action.\nAction space:\n\nCLICK:(x,y): Click on the element at the coordinate point (x,y) on the screen, e.g., CLICK:(1980,224).\nTYPE:typed_text: An action of typing a piece of text, e.g., TYPE:\"Macbook-Pro 16G Black\".\nCOMPLETE: The goal has been completed in the current screen state.\nSCROLL:UP/DOWN/LEFT/RIGHT: Scroll in a specific direction, e.g., SCROLL:UP.\nLONG_PRESS:(x,y): Long press at a specific point (x,y) on the screen, e.g., LONG_PRESS:(345,2218).\nBACK: Go back to the previous screen, e.g, BACK.\nHOME: Go to the home screen, e.g., HOME.\nPRESS_RECENT: The action to go to the previous app.\nIMPOSSIBLE: No action can be taken to achieve the goal based on current screen.\n\nGoal: <goal>Using Firefox, search for the 2017 Nobel-Prize winners in physics and then record the information in Notepad - Notes and To Do List.</goal>\nCurrent action: <action>SCROLL:LEFT</action>\n\nOutput Format: <summary>One-sentence summary of the action based on the screen image.</summary>"
+            },
+            {
+                "from": "gpt",
+                "value": "<summary>Scroll left to find the Firefox app if it's not visible on this screen.</summary>"
+            }
+        ]
+    }
+]

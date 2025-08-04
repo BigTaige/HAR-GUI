@@ -1,90 +1,3 @@
----
-# History-Aware Reasoning for GUI Agents (AAAI 2026)
-<div align="center">
-  <img width="85%" src="HAR_Framework.png">
-</div>
-
-## Introduction
-
-**HAR-GUI-3B** is a GUI-tailored basic model (native end-to-end GUI agent) built upon Qwen2.5-VL-3B-Instruct. It was developed through our HAR Framework, incorporating a series of tailored training strategies. HAR-GUI-3B integrates a stable short-term memory for episodic reasoning, which can perceive the sequential clues of the episode flexibly and make reasonable use of it. This enhancement of reasoning can assist the GUI agent in executing long-horizon interaction and achieving consistent and persistent growth across GUI-oriented tasks. Further details can be found in our article.
-
-## Quick Start
-
-### 1. Download Model Weights
-
-We provide the foundational model and several fine-tuned versions for specific tasks. **HAR-GUI-3B** is the base model, while the others are fine-tuned on top of it.
-
-**To comply with AAAI Org's anonymity guidelines, the model weight download address will be provided upon paper acceptance. (HuggingFace/ModelScope/Github)**
-
-| Model | Description | Download Link |
-| :--- | :--- | :--- |
-| **HAR-GUI-3B** | The GUI-tailored basic model via our HAR Framework. | [Link] |
-| **HAR-GUI-3B-AITW** | Fine-tuned on the AITW dataset. | [Link] |
-| **HAR-GUI-3B-Mind2Web**| Fine-tuned on the Mind2Web dataset. | [Link] |
-| **HAR-GUI-3B-GUI-Odyssey**| Fine-tuned on the GUI-Odyssey dataset. | [Link] |
-| **HAR-GUI-3B-GUI-Understanding**| Fine-tuned for comprehensive GUI understanding tasks. | [Link] |
-
-### 2. Environment Setup
-
-We recommend using a virtual environment to manage dependencies.
-
-```bash
-# Clone the repository
-git clone [https://github.com/xxxxxxxxxxxx/HAR-GUI.git]
-
-# Create and activate a virtual environment (optional but recommended)
-conda create -n HAR-GUI python=3.10
-conda activate HAR-GUI
-
-# Install the required packages
-pip install -r requirements.txt
-```
-
-## Custom Fine-tuning
-
-We provide a script to fine-tune the model on your own custom datasets or tasks. Before running, you may need to modify the script to point to your data and set your desired training parameters.
-
-```bash
-# Run the training script (w/ LoRA fine-tuning)
-sh training_scripts/scripts/finetune_lora.sh
-# Run the training script (full-parameter fine-tuning)
-sh training_scripts/scripts/finetune.sh
-```
-
-## Instruction Templates
-
-All instruction templates used in our paper and experiments can be found in the `/Prompts` directory. These are crucial for replicating our results and for prompting the model effectively.
-
-## Data Sample
-
-We list all types of training data we use in the HAR framework in `./Data` directory.
-
-## Deployment and Inference
-
-To accelerate inference speed, we support two primary methods:
-1.  **Local vLLM Deployment:**
-   ```bash
-    sh Inference/swift_inference.sh
-   ```
-2.  **Swift Framework:**
-  ```bash
-    sh Inference/swift_inference.sh
-  ```
-
-## Usage Example: GUI Episode Reasoning (GUI Automation)
-
-The following Python script demonstrates how to use the model for a GUI automation task. This example assumes you have a local vLLM server running the model. You can adapt the code to fit your specific needs.
-```bash
-# Start vllm service
-nohup python -m vllm.entrypoints.openai.api_server --served-model-name Qwen2.5-VL-3B-Instruct --model ./HAR-GUI-3B -tp 4 > log.txt &
-#nohup python -m vllm.entrypoints.openai.api_server --served-model-name Qwen2.5-VL-72B-Instruct --model ./Qwen2.5-VL-72B-Instruct -tp 8 > log.txt &
-
-# Mount your local directory
-cd ./your_directory/
-python3 -m http.server 6666
-```
-python -m vllm.entrypoints.openai.api_server --served-model-name Qwen2-VL-72B-Instruct --model Qwen/Qwen2-VL-72B-Instruct -tp 8
-```python
 import requests
 import json
 from tqdm import tqdm
@@ -135,6 +48,7 @@ def act2sum_fn(meta_data):
     # pred = chat_72B(img_url, act2sum_temp)
     return pred
 #############################################################################################
+
 
 url = "http://localhost:8000/v1/chat/completions"
 headers = {
@@ -229,10 +143,3 @@ if __name__ == "__main__":
     # evaluate(inference_data)
     with open("your_saving_path.json", "w") as f:
         f.write(json.dumps(inference_data, indent=4))
-```
-
-## Citation
-
-If you use HAR-GUI-3B or its derivatives in your research, please cite our paper (coming soon) 🙏
-
-
