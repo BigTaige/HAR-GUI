@@ -71,7 +71,7 @@ To accelerate inference speed, we support two primary methods:
     sh Inference/swift_inference.sh
   ```
 
-## Usage Example: GUI Episode Reasoning (GUI Automation)
+## Usage Example: GUI Episodic Reasoning (GUI Automation)
 
 The following Python script demonstrates how to use the model for a GUI automation task. This example assumes you have a local vLLM server running the model. You can adapt the code to fit your specific needs.
 ```bash
@@ -83,7 +83,7 @@ nohup python -m vllm.entrypoints.openai.api_server --served-model-name Qwen2.5-V
 cd ./your_directory/
 python3 -m http.server 6666
 ```
-python -m vllm.entrypoints.openai.api_server --served-model-name Qwen2-VL-72B-Instruct --model Qwen/Qwen2-VL-72B-Instruct -tp 8
+
 ```python
 import requests
 import json
