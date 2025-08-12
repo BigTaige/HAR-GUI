@@ -18,11 +18,11 @@ We provide the foundational model and several fine-tuned versions for specific t
 
 | Model | Description | Download Link |
 | :--- | :--- | :--- |
-| **HAR-GUI-3B** | The GUI-tailored basic model via our HAR Framework. | [Link] |
-| **HAR-GUI-3B-AITW** | Fine-tuned on the AITW dataset. | [Link] |
-| **HAR-GUI-3B-Mind2Web**| Fine-tuned on the Mind2Web dataset. | [Link] |
-| **HAR-GUI-3B-GUI-Odyssey**| Fine-tuned on the GUI-Odyssey dataset. | [Link] |
-| **HAR-GUI-3B-GUI-Understanding**| Fine-tuned for comprehensive GUI understanding tasks. | [Link] |
+| **HAR-GUI-3B** | The GUI-tailored basic model via our HAR Framework. | [Link](https://huggingface.co/BigTaige/HAR-GUI-3B) |
+| **HAR-GUI-3B-AITW** | Fine-tuned on the AITW dataset. | [Link](https://huggingface.co/BigTaige/HAR-GUI-3B-PT/tree/main) |
+| **HAR-GUI-3B-Mind2Web**| Fine-tuned on the Mind2Web dataset. | [Link](https://huggingface.co/BigTaige/HAR-GUI-3B-PT/tree/main) |
+| **HAR-GUI-3B-GUI-Odyssey**| Fine-tuned on the GUI-Odyssey dataset. | [Link](https://huggingface.co/BigTaige/HAR-GUI-3B-PT/tree/main) |
+| **HAR-GUI-3B-GUI-Understanding**| Fine-tuned for comprehensive GUI understanding tasks. | [Link](https://huggingface.co/BigTaige/HAR-GUI-3B-PT/tree/main) |
 
 ### 2. Environment Setup
 
