@@ -70,7 +70,14 @@ To accelerate inference speed, we support two primary methods:
   ```bash
     sh Inference/swift_inference.sh
   ```
+## Instruction for Screen Grounding
+```python
+temp = '''Locate the element on the screen with the function or description: [DESCRIPTIONS].
+Keep the following output format: {"point 2d": [x,y], "label": description of the target element.}'''
 
+elem_desc = "Description of the UI elements on the screen."
+inst = temp.replace("[DESCRIPTIONS]", elem_desc)
+```
 ## Usage Example: GUI Episodic Reasoning (GUI Automation)
 
 The following Python script demonstrates how to use the model for a GUI automation task. This example assumes you have a local vLLM server running the model. You can adapt the code to fit your specific needs.
