@@ -18,7 +18,7 @@ We provide the foundational model and several fine-tuned versions for specific t
 
 | Model | Description | Download Link |
 | :--- | :--- | :--- |
-| **HAR-GUI-3B** | The GUI-tailored basic model via our HAR Framework. | [Link](https://huggingface.co/BigTaige/HAR-GUI-3B) |
+| **HAR-GUI-3B** | The GUI-tailored native model via our HAR Framework. | [Link](https://huggingface.co/BigTaige/HAR-GUI-3B) |
 | **HAR-GUI-3B-AITW** | Fine-tuned on the AITW dataset. | [Link](https://huggingface.co/BigTaige/HAR-GUI-3B-PT/tree/main) |
 | **HAR-GUI-3B-Mind2Web**| Fine-tuned on the Mind2Web dataset. | [Link](https://huggingface.co/BigTaige/HAR-GUI-3B-PT/tree/main) |
 | **HAR-GUI-3B-GUI-Odyssey**| Fine-tuned on the GUI-Odyssey dataset. | [Link](https://huggingface.co/BigTaige/HAR-GUI-3B-PT/tree/main) |
