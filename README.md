@@ -14,8 +14,6 @@
 
 We provide the foundational model and several fine-tuned versions for specific tasks. **HAR-GUI-3B** is the base model, while the others are fine-tuned on top of it.
 
-**To comply with AAAI Org's anonymity guidelines, the model weight download address will be provided upon paper acceptance. (HuggingFace/ModelScope/Github)**
-
 | Model | Description | Download Link |
 | :--- | :--- | :--- |
 | **HAR-GUI-3B** | The GUI-tailored native model via our HAR Framework. | [Link](https://huggingface.co/BigTaige/HAR-GUI-3B) |
