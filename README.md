@@ -30,7 +30,7 @@ We recommend using a virtual environment to manage dependencies.
 
 ```bash
 # Clone the repository
-git clone [https://github.com/xxxxxxxxxxxx/HAR-GUI.git]
+git clone [https://github.com/BigTaige/HAR-GUI.git]
 
 # Create and activate a virtual environment (optional but recommended)
 conda create -n HAR-GUI python=3.10
