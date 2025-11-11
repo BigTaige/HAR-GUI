@@ -62,7 +62,7 @@ We list all types of training data we use in the HAR framework in `./Data` direc
 To accelerate inference speed, we support two primary methods:
 1.  **Local vLLM Deployment:**
    ```bash
-    sh Inference/swift_inference.sh
+    sh Inference/vllm_inference.sh
    ```
 2.  **Swift Framework:**
   ```bash
