@@ -237,7 +237,14 @@ if __name__ == "__main__":
 ```
 
 ## Citation
-
-If you use HAR-GUI-3B or its derivatives in your research, please cite our paper (coming soon) 🙏
-
+```bibtex
+@misc{wang2025historyawarereasoningguiagents,
+      title={History-Aware Reasoning for GUI Agents}, 
+      author={Ziwei Wang and Leyang Yang and Xiaoxuan Tang and Sheng Zhou and Dajun Chen and Wei Jiang and Yong Li},
+      year={2025},
+      eprint={2511.09127},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2511.09127}, 
+}
 
